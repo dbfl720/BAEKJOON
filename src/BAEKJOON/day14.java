@@ -19,9 +19,9 @@ public class day14 {
 			int b = scan.nextInt();  // b번 바구니부터
 			int f = scan.nextInt();  // j번 바구니까지
 			int k = scan.nextInt();   // k번 번호 공을 넣는다.
-			for(int j = b - 1 ; j < f; j++) {
+			for(int j = b - 1 ; j < f; j++) { // 인덱스는 0부터 시작이라서 -1써준다.
 				basket[j] = k;
-				System.out.println(basket[j]);
+				
 			}
 		}
 		
