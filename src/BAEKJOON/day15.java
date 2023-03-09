@@ -16,7 +16,7 @@ public class day15 {
 	// 배열은 0번부터 생성
 	for(int i = 0; i < N ; i++) {
 		num[i] = i + 1;  // 바구니에는 1번부터 N번까지 번호가 매겨져 있다.라고 했으므로 + 1 
-		// System.out.println(num[i]);
+		// System.out.println(num[i]);  // 1 2 3 4 5 
 	}
 	
 	//공 위치 바꾸기
@@ -25,8 +25,8 @@ public class day15 {
 		int tmp;
 		int a = scan.nextInt();
 		int b = scan.nextInt();
-		tmp = num[a - 1];
-		num[a -1] = num[b -1];
+		tmp = num[a - 1];		// 인덱스 num[0]의 값 = 1 이기 때문에, 공 1이 필요하므로 -1을해서 num[1-1]로 만든다.
+		num[a -1] = num[b -1];  
 		num[b -1] = tmp;
 	}
 	scan.close();
